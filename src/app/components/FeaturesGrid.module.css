@@ -1,0 +1,26 @@
+.wrapper {
+  padding-top: calc(var(--mantine-spacing-xl) * 4);
+  padding-bottom: calc(var(--mantine-spacing-xl) * 4);
+}
+
+.title {
+  font-family: Urbanist, var(--mantine-font-family);
+  font-weight: 900;
+  font-size: 36px;
+  margin-bottom: var(--mantine-spacing-md);
+  text-align: center;
+  margin-top: 50px;
+
+  @media (max-width: 768px) {
+    font-size: rem(28px);
+    text-align: left;
+  }
+}
+
+.description {
+  text-align: center;
+
+  @media (max-width: 768px) {
+    text-align: left;
+  }
+}

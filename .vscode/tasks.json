@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "dev",
+      "runOptions": {
+        "runOn": "folderOpen"
+      }
+    }
+  ]
+}
+
+// {
+//   "version": "2.0.0",
+//   "launch": [
+//     {
+//       "type": "npm",
+//       "script": "dev",
+//       "runOptions": {
+//         "runOn": "folderOpen",
+//         "isBackground": true
+//       }
+//     },
+//     {
+//       "type": "shell",
+//       "command": "npm run dev",
+//       "args": [],
+//       "isBackground": true
+//     }
+//   ]
+// }
