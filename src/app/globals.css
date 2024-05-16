@@ -1,6 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@fontsource Urbanist {
+  src: local("Urbanist"),
+       url("https://fonts.googleapis.com/css2?family=Urbanist&display=swap");
+  font-family: "Urbanist";
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -17,6 +23,7 @@
 }
 
 body {
+  font-family: Urbanist;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
