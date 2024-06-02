@@ -1,0 +1,84 @@
+
+
+.header {
+  height: 56px;
+  background-color: #000000;
+  border-bottom: 1px solid var(--mantine-color-gray-7);
+}
+
+.header[data-dark-mode="true"] {
+  border-bottom: 1px solid var(--mantine-color-dark-4);
+}
+
+.inner {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  display: block;
+  line-height: 1;
+  padding: 8px 12px;
+  border-radius: var(--mantine-radius-sm);
+  text-decoration: none;
+  color: var(--mantine-color-gray-7);
+  font-size: var(--mantine-font-size-sm);
+  font-weight: 500;
+}
+
+.link:hover {
+  background-color: var(--mantine-color-gray-4);
+}
+
+.link[data-dark-mode="true"] {
+  color: var(--mantine-color-dark-0);
+}
+
+.link[data-dark-mode="true"]:hover {
+  background-color: var(--mantine-color-dark-6);
+}
+
+.link[data-active="true"] {
+  background-color: #52B7AC;
+  color: var(--mantine-color-white);
+}
+
+.image {
+  width: 100px; 
+  height: auto; 
+}
+
+:where([data-mantine-color-scheme='dark']) .m_fea6bf1a {
+  background-blend-mode: darken;
+  --burger-color: var(--mantine-color-white) !important; /* Reemplaza 'your-custom-color' con el color deseado */
+}
+
+
+@media (max-width: 380px) {
+  .link {
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+
+/* Añade estilos para el menú desplegable */
+.HeaderSimple_menu__L4Xb_ {
+  background-color: #ffffff; /* Cambia el color de fondo del menú desplegable */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Agrega una sombra al menú desplegable */
+  padding: 10px; /* Ajusta el espacio interno del menú desplegable */
+}
+
+.HeaderSimple_menu-link__dhXCz {
+  display: block;
+  padding: 10px 20px; /* Ajusta el espaciado interno de cada enlace */
+  text-decoration: none;
+  color: #000000; /* Cambia el color del texto de los enlaces */
+}
+
+.HeaderSimple_menu-link__dhXCz:hover {
+  background-color: #f0f0f0; /* Cambia el color de fondo al pasar el mouse sobre los enlaces */
+}
+
