@@ -6,7 +6,7 @@ import { HeroHighlight } from "./ui/hero-highlight";
 export function HeroHighlightDemo() {
   return (
     <HeroHighlight>
-      <motion.h1
+      <motion.div
         initial={{
           opacity: 0,
           y: 20,
@@ -19,19 +19,21 @@ export function HeroHighlightDemo() {
           duration: 0.5,
           ease: [0.4, 0.0, 0.2, 1],
         }}
-        className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20"
+        // className="md:text-7xl text-3xl lg:text-9xl font-bold text-center  relative z-20"
       >
-        Concept.
-      </motion.h1>
+        {/* <h1 className="text-9xl font-semibold">concept.</h1> */}
+        <img src="/NEW Logo Concept 03 negativo.png" alt="Logo Concept" className="mx-auto w-[45%] xs:w-[80%]" />
+
+      </motion.div>
 
       {/* Primer gradiente */}
-      <div className="absolute inset-x-20 top-0 mt-32 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
+      {/* <div className="absolute inset-x-20 top-0 mt-32 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
 
-      <div className="absolute inset-x-20 top-0 mt-32 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
+      <div className="absolute inset-x-20 top-0 mt-32 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" /> */}
 
 
       {/* segundo gradiente */}
-      <motion.div
+      {/* <motion.div
         initial={{ x: "0%" }}
         animate={{ x: ["100%", "-100%", "0%", "100%"] }}
         transition={{ repeat: Infinity, duration: 5, ease: "linear" }}
@@ -42,7 +44,7 @@ export function HeroHighlightDemo() {
         animate={{ x: ["100%", "-100%", "0%", "100%"] }}
         transition={{ repeat: Infinity, duration: 5, ease: "linear" }}
         className="absolute inset-x-60 top-0 mt-32 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4"
-      />
+      /> */}
     </HeroHighlight>
   );
 }

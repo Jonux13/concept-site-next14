@@ -15,6 +15,18 @@
   }
 }
 
+.footerLink {
+  color: #999;
+  font-size: 0.78rem; 
+  text-decoration: none; 
+  margin-bottom: 10px;
+}
+
+.footerLink:hover {
+  color: #cacaca; 
+}
+
+
 .links {
   @media (max-width: 576px) {
     margin-top: var(--mantine-spacing-md);
@@ -22,6 +34,6 @@
 }
 
 .logo {
-  width: 78px;
+  width: 70px;
   height: auto;
 }

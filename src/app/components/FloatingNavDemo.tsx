@@ -2,6 +2,7 @@
 import React from "react";
 import { FloatingNav } from "./ui/floating-navbar";
 import { IconHome, IconMessage, IconUser } from "@tabler/icons-react";
+import { Link } from "react-feather";
 
 
 export function FloatingNavDemo() {
@@ -18,7 +19,7 @@ export function FloatingNavDemo() {
     },
     {
       name: "Contacto",
-      link: "/contact",
+      link: "/contacto",
       icon: (
         <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),

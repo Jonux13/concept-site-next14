@@ -1,10 +1,8 @@
-'use client';
-import React, {  useEffect, useState } from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
-import { cn } from "@/utils/cn";
-import  Link from "next/link"
-
-
+import { cn } from "@/app/utils/cn";
+import Link from "next/link";
 
 const Navbar = ({ className }: { className?: string }) => {
   const [active, setActive] = useState<string | null>(null);
@@ -27,20 +25,22 @@ const Navbar = ({ className }: { className?: string }) => {
 
   return (
     <div
-    className={cn(
-      "sticky top-10 inset-x-0 max-w-2xl mx-auto z-50",
-      className,
-      isScrolled ? "border border-solid border-darkGray rounded-full" : ""
-    )}
-  >
-       <Menu setActive={setActive}>
-          <Link href={"/"}>
-          <MenuItem setActive={setActive} active={active} item="Home">
-            
-          </MenuItem>
-          </Link>
+      className={cn(
+        "sticky top-10 inset-x-0 max-w-2xl mx-auto z-50",
+        className,
+        isScrolled ? "border border-solid border-darkGray rounded-full" : ""
+      )}
+    >
+      <Menu setActive={setActive}>
+        <Link href={"/"}>
+          <MenuItem
+            setActive={setActive}
+            active={active}
+            item="Home"
+          ></MenuItem>
+        </Link>
 
-          <MenuItem setActive={setActive} active={active} item="Portfolio">
+        <MenuItem setActive={setActive} active={active} item="Portfolio">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
               title="Algochurn"
@@ -69,13 +69,15 @@ const Navbar = ({ className }: { className?: string }) => {
           </div>
         </MenuItem>
         <Link href={"/contact"}>
-          <MenuItem setActive={setActive} active={active} item="Contacto">
-            
-          </MenuItem>
-          </Link>
-       </Menu>
-      </div>
-  )
-}
+          <MenuItem
+            setActive={setActive}
+            active={active}
+            item="Contacto"
+          ></MenuItem>
+        </Link>
+      </Menu>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;

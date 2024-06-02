@@ -2,16 +2,12 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@fontsource Urbanist {
-  src: local("Urbanist"),
-       url("https://fonts.googleapis.com/css2?family=Urbanist&display=swap");
-  font-family: "Urbanist";
-}
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --burger-color:#ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +15,7 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+
   }
 }
 
@@ -31,6 +28,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    /* #0c0c0e */
 }
 
 @layer utilities {

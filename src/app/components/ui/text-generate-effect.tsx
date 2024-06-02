@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
-import { cn } from "@/utils/cn";
+import { cn } from "@/app/utils/cn";
 
 export const TextGenerateEffect = ({
   words,
@@ -41,7 +41,7 @@ export const TextGenerateEffect = ({
         if (spans) {
           spans[idx].style.opacity = "1";
         }
-      }, idx * 200); // Incrementar el retardo por cada palabra
+      }, idx * 220); // Incrementar el retardo por cada palabra
     });
   };
 
@@ -63,9 +63,9 @@ export const TextGenerateEffect = ({
   };
   return (
     <div className="w-2/3 mx-auto">
-      <div className={cn("font-bold", className)}>
+      <div className={cn("font-semibold", className)}>
         <div className="mt-4">
-          <div className="dark:text-white text-black text-2xl leading-snug tracking-wide">
+          <div className="mb-12 dark:text-white text-black text-3xl leading-snug tracking-wide xs:text-center xs:text-2xl">
             {renderWords()}
           </div>
         </div>

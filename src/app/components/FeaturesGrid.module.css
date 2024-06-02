@@ -1,26 +1,37 @@
-.wrapper {
-  padding-top: calc(var(--mantine-spacing-xl) * 4);
-  padding-bottom: calc(var(--mantine-spacing-xl) * 4);
+.wrapperone {
+  position: relative;
+  /* padding-top: calc(var(--mantine-spacing-xl) * 4); */
+  /* padding-bottom: calc(var(--mantine-spacing-xl) * 4); */
+  margin-top: -150px;
+  margin-bottom: 50px;
 }
 
-.title {
+.titleOne {
   font-family: Urbanist, var(--mantine-font-family);
   font-weight: 900;
-  font-size: 36px;
+  font-size: 80px;
   margin-bottom: var(--mantine-spacing-md);
-  text-align: center;
-  margin-top: 50px;
+  text-align: left;
+  margin-top: -150px;
 
-  @media (max-width: 768px) {
-    font-size: rem(28px);
-    text-align: left;
   }
+  .simpleGrid {
+    margin-top: -250px;
+
 }
 
-.description {
-  text-align: center;
+.gradientText {
+  background-image: linear-gradient(to right, rgb(82, 183, 172), #FFFFFF);
+  -webkit-background-clip: text;
+  color: transparent;
+  /* color: #52B7AC; */
+}
 
-  @media (max-width: 768px) {
-    text-align: left;
+@media (max-width: 380px) {
+  .titleOne {
+    font-size: 50px;
+    text-align: center;
   }
+ 
+
 }

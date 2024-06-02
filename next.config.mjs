@@ -1,13 +1,21 @@
-
-
-export const images = {
-  remotePatterns: [
-    {
-      protocol: 'https',
-      hostname: 'aceternity.com',
-      // You can add these as well
-      // port: '',
-      // pathname: 'arifscloud/image/upload/**',
-    },
-  ],
+// next.config.js
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'aceternity.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'assets.aceternity.com',
+      },
+    ],
+  },
+  webpack: (config, { isServer }) => {
+    // Configuraciones adicionales de Webpack si las necesitas
+    return config;
+  },
 };
+
+export default nextConfig;
