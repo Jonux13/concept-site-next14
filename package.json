@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@eslint/config-array": "^0.16.0",
+    "@eslint/object-schema": "^2.1.4",
     "@mantine/core": "^7.9.1",
     "@mantine/form": "^7.9.1",
     "@mantine/hooks": "^7.9.1",
@@ -19,11 +21,14 @@
     "@tsparticles/slim": "^3.4.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.1.9",
+    "glob": "^9.3.5",
+    "lru-cache": "^10.2.2",
     "mini-svg-data-uri": "^1.4.4",
     "next": "^14.2.3",
     "react": "^18",
     "react-dom": "^18",
     "react-feather": "^2.0.10",
+    "rimraf": "^4.4.1",
     "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
